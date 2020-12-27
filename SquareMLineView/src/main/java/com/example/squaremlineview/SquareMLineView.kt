@@ -46,7 +46,7 @@ fun Canvas.drawSquareMLine(scale : Float, w : Float, h : Float, paint : Paint) {
         save()
         scale(1f - 2 * j, 1f)
         drawLine(-mSize, -mSize / 2, -mSize - size * sf2, -mSize / 2 - size * sf2, paint)
-        drawLine(-mSize - size, 0f, -mSize - size, -size * sf3, paint)
+        drawLine(-mSize - size, 0f, -mSize - size, -(size + mSize / 2) * sf3, paint)
         restore()
     }
     restore()
