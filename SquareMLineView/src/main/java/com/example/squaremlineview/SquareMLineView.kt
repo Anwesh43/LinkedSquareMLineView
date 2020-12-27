@@ -212,4 +212,13 @@ class SquareMLineView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+
+        fun create(activity : Activity) : SquareMLineView {
+            val view : SquareMLineView = SquareMLineView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 }
